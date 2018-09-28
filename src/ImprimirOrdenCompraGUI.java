@@ -1,4 +1,7 @@
 /*****************************************************************
+
+
+* USA
 * ImprimirOrdenCompraGUI.java
 * Dean & Dean
 *
@@ -14,6 +17,12 @@
 	int cant; // número de elementos comprados
 	nombreArticulo = JOptionPane.showInputDialog("Nombre del artículo comprado:");
 	precio = Double.parseDouble(JOptionPane.showInputDialog("Cantidad:"));
+	cant = Integer.parseInt(JOptionPane.showInputDialog("Cantidad:"));
+	JOptionPane.showMessageDialog(null,
+	"ORDEN DE COMPRA:\n\n" +
+	"Artículo: " + nombreArticulo + "\nCantidad: " + cant +
+	"\nPrecio total: $" + precio * cant);
+	
 	cant = Integer.parseInt(JOptionPane.showInputDialog("Cantidad:"));
 	JOptionPane.showMessageDialog(null,
 	"ORDEN DE COMPRA:\n\n" +
